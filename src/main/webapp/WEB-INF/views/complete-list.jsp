@@ -7,11 +7,11 @@
 <meta charset="ISO-8859-1">
 <title>Consume Api Lab</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<p><a href="/" class="btn btn-dark">Tiny List</a></p>
+<p><a href="/" class="btn btn-dark">Back</a></p>
 </head>
 <body>
 <div class="container">
-<h1>Complete List</h1>
+<h1>Complete List of Tech Inventors and Innovators</h1>
 	<table class="table">
 			<thead class="thead-dark">
 				<tr>

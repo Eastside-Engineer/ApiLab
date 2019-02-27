@@ -26,10 +26,10 @@ public class APicontroller {
 		
 		return new ModelAndView("index", "tiny", tinyList);
 	}
-	@RequestMapping("/completelist")
+	@RequestMapping("/whole-list")
 	public ModelAndView showCompleteList() {
 		List<complete> completeList = apiService.printCompleteList();
 		Collections.sort(completeList);
-		return new ModelAndView("complete-page", "complete", completeList);
+		return new ModelAndView("complete-list", "complete", completeList);
 	}
 }

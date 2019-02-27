@@ -19,12 +19,12 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach var="tech" items="${complete}">
+				<c:forEach var="List" items="${ complete }">
 				<tr>
-					<td>${tech.firstName}</td>
-					<td>${tech.lastName}</td>
-					<td>${tech.innovation}</td>
-					<td>${tech.year}</td>
+					<td>${List.firstName}</td>
+					<td>${List.lastName}</td>
+					<td>${List.innovation}</td>
+					<td>${List.year}</td>
 				</tr>
 				</c:forEach>
 			</tbody>

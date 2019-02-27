@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Consume API Lab</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
@@ -18,11 +18,11 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach var="tech" items="${tiny}">
+				<c:forEach var="tech" items="${ tiny }">
 				<tr>
-					<td>${tech.name}</td>
-					<td>${tech.invented}</td>
-					<td>${tech.year}</td>
+					<td>${ tech.name }</td>
+					<td>${ tech.invented }</td>
+					<td>${ tech.year }</td>
 				</tr>
 				</c:forEach>
 			</tbody>

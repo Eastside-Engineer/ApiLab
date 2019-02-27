@@ -26,7 +26,7 @@ public class APicontroller {
 		
 		return new ModelAndView("index", "tiny", tinyList);
 	}
-	@RequestMapping("/whole-list")
+	@RequestMapping("/wholelist")
 	public ModelAndView showCompleteList() {
 		List<complete> completeList = apiService.printCompleteList();
 		Collections.sort(completeList);

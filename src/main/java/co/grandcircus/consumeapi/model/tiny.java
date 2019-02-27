@@ -3,15 +3,15 @@ package co.grandcircus.consumeapi.model;
 public class tiny implements Comparable<tiny> {
 	
 	private String name;
-	private String invention;
+	private String invented;
 	private Integer year;
 	
 	public tiny() {}
 
-	public tiny(String name, String invention, Integer year) {
+	public tiny(String name, String invented, Integer year) {
 		super();
 		this.name = name;
-		this.invention = invention;
+		this.invented = invented;
 		this.year = year;
 	}
 
@@ -23,12 +23,12 @@ public class tiny implements Comparable<tiny> {
 		this.name = name;
 	}
 
-	public String getInvention() {
-		return invention;
+	public String getInvented() {
+		return invented;
 	}
 
-	public void setInvention(String invention) {
-		this.invention = invention;
+	public void setInvented(String invented) {
+		this.invented = invented;
 	}
 
 	public Integer getYear() {
@@ -42,6 +42,7 @@ public class tiny implements Comparable<tiny> {
 	@Override
 	public int compareTo(tiny o) {
 		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 

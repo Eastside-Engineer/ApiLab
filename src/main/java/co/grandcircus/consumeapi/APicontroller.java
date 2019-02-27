@@ -1,34 +1,35 @@
 package co.grandcircus.consumeapi;
 
-public class APicontroller {
 
-import java.util.Arrays;
+
 import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import co.grandcircus.consumeapi.model.complete;
+import co.grandcircus.consumeapi.model.tiny;
 
 
 
 @Controller
-public class FamousController {
+public class APicontroller {
 	@Autowired
 	ApiService apiService;
 	
 	@RequestMapping("/")
 	public ModelAndView showHome() {
-		List<TinyList> tiny = apiService.printTinyList();
+		List<tiny> tinyList = apiService.printTinyList();
 		
-		return new ModelAndView("index", "tiny", tiny);
+		return new ModelAndView("index", "tiny", tinyList);
 	}
 	@RequestMapping("/completelist")
 	public ModelAndView showCompleteList() {
-		List<CompleteList> complete = apiService.printCompleteList();
-		Collections.sort(complete);
-		return new ModelAndView("complete-page", "complete", complete);
+		List<complete> completeList = apiService.printCompleteList();
+		Collections.sort(completeList);
+		return new ModelAndView("complete-page", "complete", completeList);
 	}
 }

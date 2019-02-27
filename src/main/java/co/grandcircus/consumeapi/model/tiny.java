@@ -1,6 +1,6 @@
 package co.grandcircus.consumeapi.model;
 
-public class tiny {
+public class tiny implements Comparable<tiny> {
 	
 	private String name;
 	private String invention;
@@ -37,6 +37,12 @@ public class tiny {
 
 	public void setYear(Integer year) {
 		this.year = year;
+	}
+
+	@Override
+	public int compareTo(tiny o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	

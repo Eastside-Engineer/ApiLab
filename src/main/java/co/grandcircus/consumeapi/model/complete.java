@@ -1,6 +1,6 @@
 package co.grandcircus.consumeapi.model;
 
-public class complete {
+public class complete implements Comparable<complete> {
 	
 	private String firstName;
 	private String lastName;
@@ -47,6 +47,12 @@ public class complete {
 
 	public void setYear(Integer year) {
 		this.year = year;
+	}
+
+	@Override
+	public int compareTo(complete o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	
